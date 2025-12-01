@@ -9,11 +9,14 @@ enum DirectionMove
 public class TurnCore:MonoBehaviour
 {
     [SerializeField] Grid grid;
+    [SerializeField] MovementCore movementCore;
+    [SerializeField] GameCore game;
 
     bool coolDown = false;
+
     void Update()
     {
-        if(!coolDown)
+        if(!movementCore.IsMoving && !coolDown && !game.GameStopped)
         {
             if(Input.GetKeyDown(KeyCode.UpArrow))
             {
@@ -40,6 +43,7 @@ public class TurnCore:MonoBehaviour
         StartCoroutine(DoTurn(directionMove));
     }
 
+    [SerializeField][Range(0, 1f)] float cooldDown;
     IEnumerator DoTurn(DirectionMove directionMove)
     {
         if (directionMove == DirectionMove.up)

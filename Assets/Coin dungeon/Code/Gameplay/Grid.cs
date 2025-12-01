@@ -1,15 +1,20 @@
+
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
-public class Grid:Component
+public class Grid:MonoBehaviour
 {
-    ImpactCore impactCore;
-
 
     Vector2[,] grid = new Vector2[4, 8];
 
     Vector2Int playerPos = new Vector2Int();
+
+    [SerializeField] MovementCore movementCore;
+    
 
     public Vector2Int PlayerPos
     {
@@ -21,12 +26,22 @@ public class Grid:Component
         {
             if ((value.x > 7 || value.x < 0) || (value.y > 3 || value.y < 0))
             {
-                impactCore.Deny();
+                movementCore.DenyMove(value);
                 return;
             }
+
+            if (spawnPoints != null && spawnPoints.Contains(value))
+            {
+                movementCore.AttackMove(value);
+                return;
+            }
+
+            
             
             playerPos = value;
 
+
+            movementCore.DeffaultMove();
             
         }
     }
@@ -66,11 +81,28 @@ public class Grid:Component
 
 
     [SerializeField][Range(1, 5)] int enemyMaxAmount;
+    List<Vector2Int> spawnPoints = new List<Vector2Int>();
+    List<GameObject> spawnPointsGO = new List<GameObject>();
+
+    public void RemoveSpawnPoint(Vector2Int target)
+    {
+        if(spawnPoints.Contains(target))
+        {
+            Disappear(spawnPointsGO[spawnPoints.IndexOf(target)]);
+
+            spawnPointsGO.RemoveAt(spawnPoints.IndexOf(target));
+
+            spawnPoints.Remove(target);
+
+
+        }
+    }
+
+
     void Spawn()
     {
         int enemyAmount = UnityEngine.Random.Range(1, enemyMaxAmount);
 
-        Vector2Int[] spawnPoints = new Vector2Int[enemyAmount];
 
         for (int i = 0; i < enemyAmount; i++)
         {
@@ -80,11 +112,52 @@ public class Grid:Component
             {
                 spawnPoint = Utils.RandomVector2(0, 7, 0, 3);
 
-                spawnPoints[i] = spawnPoint;
+                spawnPoints.Add(spawnPoint);
 
-                
+
 
             } while(!(spawnPoints.Contains(spawnPoint)) || CheckBorderingPosition(playerPos,spawnPoint));
+
+            foreach(var sp in spawnPoints)
+            {
+                spawnPointsGO.Add(Instantiate(GetEnemy(),Position(sp),Quaternion.identity ,gameObject.transform));
+            }
+        }
+    }
+
+    [SerializeField] GameObject testEnemyPrefab;
+    GameObject GetEnemy()
+    {
+        return testEnemyPrefab;
+    }
+
+    void Disappear(GameObject gbject)
+    {
+        var sr = gbject.GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            StartCoroutine(DoDisappear(sr));
+        }
+    }
+
+    [SerializeField][Range(0,1f)] float disappearTime;
+    IEnumerator DoDisappear(SpriteRenderer spriteRenderer)
+    {
+        float elapsed = 0;
+
+        Color startColor = spriteRenderer.color;
+        Color endColor = spriteRenderer.color;
+        endColor.a = 0;
+
+
+        while (elapsed < disappearTime)
+        {
+            elapsed += Time.deltaTime;
+
+            spriteRenderer.color = Color.Lerp(startColor, endColor, elapsed / disappearTime);
+
+            yield return null;
+
         }
     }
 

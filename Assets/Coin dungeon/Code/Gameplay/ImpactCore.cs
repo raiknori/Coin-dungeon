@@ -1,6 +1,6 @@
 class ImpactCore
 {
-    public void Deny()
+    public void Shake()
     {
 
     }

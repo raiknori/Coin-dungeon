@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0649c52123acb2a44b471cba388a8bf7, type: 3}
+  m_Name: Holy coin
+  m_EditorClassIdentifier: 
+  winChance: 0.7
+  goldX: 0.75
+  coinSpriteHead: {fileID: 6842600090714606236, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
+  coinSpriteTail: {fileID: -841040678384945940, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
+  coinSpriteDeffault: {fileID: 5048345779837316265, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
+  description: 'God-Blessed coin\nChance of head: 70% \n gold: x0.75'
