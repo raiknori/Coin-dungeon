@@ -1,20 +1,26 @@
 using DG.Tweening;
-using System.Collections;
 using UnityEngine;
 
 public class UIPanel:MonoBehaviour
 {
     [SerializeField] CanvasGroup canvasGroup;
+    [SerializeField][Range(0.1f, 10f)] float fadeDuration;
+
+    public float FadeDuration
+    {
+        get { return fadeDuration; }
+        private set { fadeDuration = value; }
+    }
     public void FadeIn()
     {
         if(canvasGroup != null)
-            canvasGroup.DOFade(0, 1f);
+            canvasGroup.DOFade(1, fadeDuration);
     }
 
     public void FadeOut()
     {
         if(canvasGroup != null)
-            canvasGroup.DOFade(1f, 0);
+            canvasGroup.DOFade(0, fadeDuration);
     }
 
     private void OnValidate()

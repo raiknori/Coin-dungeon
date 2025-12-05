@@ -11,9 +11,36 @@ public class TurnCore:MonoBehaviour
     [SerializeField] Grid grid;
     [SerializeField] MovementCore movementCore;
     [SerializeField] GameCore game;
+    [SerializeField] GameObject tutorialText; 
 
     bool coolDown = false;
+    public static bool Tutorial = true;
 
+    private void Start()
+    {
+        StartCoroutine(MoveTutorial());
+    }
+
+    IEnumerator MoveTutorial()
+    {
+        tutorialText?.SetActive(true);
+
+        while(TurnCore.Tutorial)
+        {
+            if( Input.GetKeyDown(KeyCode.UpArrow)    ||  
+                Input.GetKeyDown(KeyCode.DownArrow) || 
+                Input.GetKeyDown(KeyCode.LeftArrow) ||  
+                Input.GetKeyDown(KeyCode.RightArrow ))
+            {
+                break;
+            }
+
+            yield return null;
+        }
+
+        tutorialText?.gameObject.SetActive(false);
+        TurnCore.Tutorial = false;
+    }
     void Update()
     {
         if(!movementCore.IsMoving && !coolDown && !game.GameStopped)
@@ -46,6 +73,7 @@ public class TurnCore:MonoBehaviour
     [SerializeField][Range(0, 1f)] float cooldDown;
     IEnumerator DoTurn(DirectionMove directionMove)
     {
+
         if (directionMove == DirectionMove.up)
         {
             grid.PlayerPos = new Vector2Int(grid.PlayerPos.x, grid.PlayerPos.y+1);

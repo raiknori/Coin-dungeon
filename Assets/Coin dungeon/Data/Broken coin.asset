@@ -17,4 +17,5 @@ MonoBehaviour:
   coinSpriteHead: {fileID: 6842600090714606236, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
   coinSpriteTail: {fileID: -841040678384945940, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
   coinSpriteDeffault: {fileID: 5048345779837316265, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
+  name: Broken coin
   description: 'HIGH RISK HIGH REWARD\nChance of head: 30% \n gold: x3'

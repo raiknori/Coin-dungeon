@@ -8,14 +8,16 @@ public class CoinFlipping
     [SerializeField] Grid grid;
     [SerializeField] GoldCore goldCore;
     [SerializeField] HealthCore health;
-
+    [SerializeField] GameObject selectCoinText;
 
     Coin selectedCoin;
     bool coinSelected = false;
-
+    [SerializeField] CoinAnimation coinAnimation;
     public void Flip(Vector2Int target)
     {
-        if(selectedCoin.DoRoll())
+
+        coinAnimation.DoFlipAnim();
+        if (selectedCoin.DoRoll())
         {
             Win(target);
         }
@@ -28,13 +30,14 @@ public class CoinFlipping
     {
         coinSelected = false;
 
-        //text.SelectCoin
+        selectCoinText?.SetActive(true);
         while (!coinSelected)
         {
 
             yield return null;
         }
 
+        selectCoinText?.SetActive(false);
 
     }
 

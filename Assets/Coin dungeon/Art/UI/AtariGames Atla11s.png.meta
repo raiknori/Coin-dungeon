@@ -1,0 +1,1911 @@
+fileFormatVersion: 2
+guid: ce4ccd084f8ee4d4b84178dc74f34fc9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8972819783519630600
+    second: AtariGames Atla11s_0
+  - first:
+      213: -320434849509672091
+    second: AtariGames Atla11s_1
+  - first:
+      213: 3164126511680709823
+    second: AtariGames Atla11s_2
+  - first:
+      213: 3398309780122536394
+    second: AtariGames Atla11s_3
+  - first:
+      213: -6352453982261701016
+    second: AtariGames Atla11s_4
+  - first:
+      213: -5889859911510260252
+    second: AtariGames Atla11s_5
+  - first:
+      213: -8992301027313894652
+    second: AtariGames Atla11s_6
+  - first:
+      213: 1750880452002155707
+    second: AtariGames Atla11s_7
+  - first:
+      213: -3908581991811850714
+    second: AtariGames Atla11s_8
+  - first:
+      213: 2578923822503166820
+    second: AtariGames Atla11s_9
+  - first:
+      213: -8509987588348782747
+    second: AtariGames Atla11s_10
+  - first:
+      213: 7674609845679643107
+    second: AtariGames Atla11s_11
+  - first:
+      213: -3694478910931480333
+    second: AtariGames Atla11s_12
+  - first:
+      213: 8643157469098289651
+    second: AtariGames Atla11s_13
+  - first:
+      213: 4576798591786644185
+    second: AtariGames Atla11s_14
+  - first:
+      213: 5072793644459030971
+    second: AtariGames Atla11s_15
+  - first:
+      213: 316064389427457694
+    second: AtariGames Atla11s_16
+  - first:
+      213: 196651123846207201
+    second: AtariGames Atla11s_17
+  - first:
+      213: 576732509549153397
+    second: AtariGames Atla11s_18
+  - first:
+      213: 7875648300174441173
+    second: AtariGames Atla11s_19
+  - first:
+      213: -3029581847665831327
+    second: AtariGames Atla11s_20
+  - first:
+      213: -3301267211741407103
+    second: AtariGames Atla11s_21
+  - first:
+      213: -3873398285848456661
+    second: AtariGames Atla11s_22
+  - first:
+      213: -8459261674536817249
+    second: AtariGames Atla11s_23
+  - first:
+      213: -3167912925789345515
+    second: AtariGames Atla11s_24
+  - first:
+      213: -7903388834570963975
+    second: AtariGames Atla11s_25
+  - first:
+      213: -8789611975797308496
+    second: AtariGames Atla11s_26
+  - first:
+      213: -5388924820756614982
+    second: AtariGames Atla11s_27
+  - first:
+      213: -2021894143352089601
+    second: AtariGames Atla11s_28
+  - first:
+      213: 5330239858990607214
+    second: AtariGames Atla11s_29
+  - first:
+      213: 8769499022635109468
+    second: AtariGames Atla11s_30
+  - first:
+      213: -1440464975353322886
+    second: AtariGames Atla11s_31
+  - first:
+      213: 6980277707198701312
+    second: AtariGames Atla11s_32
+  - first:
+      213: -1749607725565060364
+    second: AtariGames Atla11s_33
+  - first:
+      213: 2432753056852859376
+    second: AtariGames Atla11s_34
+  - first:
+      213: 8970805368265993055
+    second: AtariGames Atla11s_35
+  - first:
+      213: -7475500615788699882
+    second: AtariGames Atla11s_36
+  - first:
+      213: 3201174853884996839
+    second: AtariGames Atla11s_37
+  - first:
+      213: -160075125966062195
+    second: AtariGames Atla11s_38
+  - first:
+      213: 5309069473653323482
+    second: AtariGames Atla11s_39
+  - first:
+      213: -2240184038582334826
+    second: AtariGames Atla11s_40
+  - first:
+      213: -7189985900908922951
+    second: AtariGames Atla11s_41
+  - first:
+      213: 2078865698864318172
+    second: AtariGames Atla11s_42
+  - first:
+      213: -900741595843697224
+    second: AtariGames Atla11s_43
+  - first:
+      213: -6426250005861991089
+    second: AtariGames Atla11s_44
+  - first:
+      213: 7065724391610108952
+    second: AtariGames Atla11s_45
+  - first:
+      213: 6699203470894539529
+    second: AtariGames Atla11s_46
+  - first:
+      213: -8953046746749172824
+    second: AtariGames Atla11s_47
+  - first:
+      213: -3049041743003442028
+    second: AtariGames Atla11s_48
+  - first:
+      213: -2581086977769462761
+    second: AtariGames Atla11s_49
+  - first:
+      213: -2916803292507178586
+    second: AtariGames Atla11s_50
+  - first:
+      213: -8218233452133634561
+    second: AtariGames Atla11s_51
+  - first:
+      213: -8354973133423971045
+    second: AtariGames Atla11s_52
+  - first:
+      213: -1379227974871858275
+    second: AtariGames Atla11s_53
+  - first:
+      213: 4563871197375452467
+    second: AtariGames Atla11s_54
+  - first:
+      213: 5430986968719219208
+    second: AtariGames Atla11s_55
+  - first:
+      213: 7175469788387607954
+    second: AtariGames Atla11s_56
+  - first:
+      213: -5830991155314712218
+    second: AtariGames Atla11s_57
+  - first:
+      213: 3925106764254895146
+    second: AtariGames Atla11s_58
+  - first:
+      213: -901443275083752723
+    second: AtariGames Atla11s_59
+  - first:
+      213: -5878787797139898194
+    second: AtariGames Atla11s_60
+  - first:
+      213: -377785223981241829
+    second: AtariGames Atla11s_61
+  - first:
+      213: 6691105146286152014
+    second: AtariGames Atla11s_62
+  - first:
+      213: -26558570219741835
+    second: AtariGames Atla11s_63
+  - first:
+      213: -419368054697576477
+    second: AtariGames Atla11s_64
+  - first:
+      213: -2976075749428561452
+    second: AtariGames Atla11s_65
+  - first:
+      213: -6368668092347044194
+    second: AtariGames Atla11s_66
+  - first:
+      213: -5386503671377207367
+    second: AtariGames Atla11s_67
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AtariGames Atla11s_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 468
+        width: 63
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa07b962f32a7380800000000000000
+      internalID: -8972819783519630600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 468
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bf15db3369d8bf0800000000000000
+      internalID: -320434849509672091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 461
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4ef115c4c39eb20800000000000000
+      internalID: 3164126511680709823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 461
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac980f07db8392f20800000000000000
+      internalID: 3398309780122536394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 431
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866964782cc87d7a0800000000000000
+      internalID: -6352453982261701016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_5
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 422
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e50e95cd93034ea0800000000000000
+      internalID: -5889859911510260252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_6
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 422
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b3391ebdde43380800000000000000
+      internalID: -8992301027313894652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_7
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 452
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc83c99e706c4810800000000000000
+      internalID: 1750880452002155707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 397
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ed092136de1c9c0800000000000000
+      internalID: -3908581991811850714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 397
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46308178d8d2ac320800000000000000
+      internalID: 2578923822503166820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 390
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567dc71506376e980800000000000000
+      internalID: -8509987588348782747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_11
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 390
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e953792ef0b18a60800000000000000
+      internalID: 7674609845679643107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_12
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 368
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0d1c331039abcc0800000000000000
+      internalID: -3694478910931480333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_13
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 359
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f92e5bbce9a2f770800000000000000
+      internalID: 8643157469098289651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 396
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d273fff11e048f30800000000000000
+      internalID: 4576798591786644185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_15
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 396
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb9f6dc51fe266640800000000000000
+      internalID: 5072793644459030971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 326
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e69f933e2e26400800000000000000
+      internalID: 316064389427457694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 326
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6d88db725aab200800000000000000
+      internalID: 196651123846207201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_18
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 319
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cc81a6927f00800800000000000000
+      internalID: 576732509549153397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_19
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 305
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da7ecbe66ceb4d60800000000000000
+      internalID: 7875648300174441173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_20
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 296
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16218e76c53c4f5d0800000000000000
+      internalID: -3029581847665831327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_21
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 312
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188528736fa8f22d0800000000000000
+      internalID: -3301267211741407103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_22
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 340
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22556af7ccee3ac0800000000000000
+      internalID: -3873398285848456661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_23
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 255
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d282b735aaa9a80800000000000000
+      internalID: -8459261674536817249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_24
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 248
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51925f27aff4904d0800000000000000
+      internalID: -3167912925789345515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_25
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 243
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3fb999ab5815290800000000000000
+      internalID: -7903388834570963975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_26
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 242
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b305153a76050680800000000000000
+      internalID: -8789611975797308496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_27
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 233
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab034816d61b635b0800000000000000
+      internalID: -5388924820756614982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_28
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff35e043df9c0f3e0800000000000000
+      internalID: -2021894143352089601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_29
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 256
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b63c239e0d8f940800000000000000
+      internalID: 5330239858990607214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_30
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 284
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c0d46f5e483b970800000000000000
+      internalID: 8769499022635109468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_31
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 177
+        width: 33
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a726ca0acb0720ce0800000000000000
+      internalID: -1440464975353322886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_32
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 177
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f1823779deed060800000000000000
+      internalID: 6980277707198701312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_33
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 172
+        width: 48
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa5a6d1b0528b7e0800000000000000
+      internalID: -1749607725565060364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_34
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 201
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f9d5f31400e2c120800000000000000
+      internalID: 2432753056852859376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_35
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 201
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b69acf3f3be7c70800000000000000
+      internalID: 8970805368265993055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_36
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 193
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f53bdfbcfa14890800000000000000
+      internalID: -7475500615788699882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_37
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 228
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec6abda19bdc6c20800000000000000
+      internalID: 3201174853884996839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_38
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 138
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8dba63658c47cdf0800000000000000
+      internalID: -160075125966062195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_39
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 193
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6f9f0ce8a9da940800000000000000
+      internalID: 5309069473653323482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_40
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 193
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69accc46c7449e0e0800000000000000
+      internalID: -2240184038582334826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_41
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 172
+        width: 55
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7b144dae9083c90800000000000000
+      internalID: -7189985900908922951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_42
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 170
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd64d8cb65d99dc10800000000000000
+      internalID: 2078865698864318172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_43
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 98
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b561597a4cef73f0800000000000000
+      internalID: -900741595843697224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_44
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 146
+        width: 55
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d7ebadaaf51d6a0800000000000000
+      internalID: -6426250005861991089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_45
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 146
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ccbbaf5ee7e0260800000000000000
+      internalID: 7065724391610108952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_46
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 130
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903abb8101a58fc50800000000000000
+      internalID: 6699203470894539529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_47
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 130
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a38c8a4b6360c380800000000000000
+      internalID: -8953046746749172824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_48
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 130
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49421f270b0afa5d0800000000000000
+      internalID: -3049041743003442028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_49
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 116
+        width: 55
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7142aa3a1132e2cd0800000000000000
+      internalID: -2581086977769462761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_50
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 130
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a97b6efbde6587d0800000000000000
+      internalID: -2916803292507178586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_51
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 48
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffda754a738f2fd80800000000000000
+      internalID: -8218233452133634561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_52
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 75
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15f452a33c2d0c80800000000000000
+      internalID: -8354973133423971045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_53
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 75
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d934b7dd67ffbdce0800000000000000
+      internalID: -1379227974871858275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_54
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 75
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33553307ca0265f30800000000000000
+      internalID: 4563871197375452467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_55
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 67
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ad84a9fddbe5b40800000000000000
+      internalID: 5430986968719219208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_56
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 67
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295046951c3649360800000000000000
+      internalID: 7175469788387607954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_57
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 67
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661a50b2078241fa0800000000000000
+      internalID: -5830991155314712218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_58
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 60
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c55e45ec7c87630800000000000000
+      internalID: 3925106764254895146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_59
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 67
+        width: 25
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dead77b0e1e6d73f0800000000000000
+      internalID: -901443275083752723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_60
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 4
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0439945a95a6ea0800000000000000
+      internalID: -5878787797139898194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_61
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 4
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ae4332756d1caf0800000000000000
+      internalID: -377785223981241829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_62
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 4
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e499c27fda49bdc50800000000000000
+      internalID: 6691105146286152014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_63
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 4
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d5f400f15a1aff0800000000000000
+      internalID: -26558570219741835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_64
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 4
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7ba95e9fa1e2af0800000000000000
+      internalID: -419368054697576477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_65
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 4
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9f7a2bfdad2b6d0800000000000000
+      internalID: -2976075749428561452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_66
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 4
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e2a47dc12fd97a0800000000000000
+      internalID: -6368668092347044194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtariGames Atla11s_67
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 4
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf5936237b4f35b0800000000000000
+      internalID: -5386503671377207367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AtariGames Atla11s_0: -8972819783519630600
+      AtariGames Atla11s_1: -320434849509672091
+      AtariGames Atla11s_10: -8509987588348782747
+      AtariGames Atla11s_11: 7674609845679643107
+      AtariGames Atla11s_12: -3694478910931480333
+      AtariGames Atla11s_13: 8643157469098289651
+      AtariGames Atla11s_14: 4576798591786644185
+      AtariGames Atla11s_15: 5072793644459030971
+      AtariGames Atla11s_16: 316064389427457694
+      AtariGames Atla11s_17: 196651123846207201
+      AtariGames Atla11s_18: 576732509549153397
+      AtariGames Atla11s_19: 7875648300174441173
+      AtariGames Atla11s_2: 3164126511680709823
+      AtariGames Atla11s_20: -3029581847665831327
+      AtariGames Atla11s_21: -3301267211741407103
+      AtariGames Atla11s_22: -3873398285848456661
+      AtariGames Atla11s_23: -8459261674536817249
+      AtariGames Atla11s_24: -3167912925789345515
+      AtariGames Atla11s_25: -7903388834570963975
+      AtariGames Atla11s_26: -8789611975797308496
+      AtariGames Atla11s_27: -5388924820756614982
+      AtariGames Atla11s_28: -2021894143352089601
+      AtariGames Atla11s_29: 5330239858990607214
+      AtariGames Atla11s_3: 3398309780122536394
+      AtariGames Atla11s_30: 8769499022635109468
+      AtariGames Atla11s_31: -1440464975353322886
+      AtariGames Atla11s_32: 6980277707198701312
+      AtariGames Atla11s_33: -1749607725565060364
+      AtariGames Atla11s_34: 2432753056852859376
+      AtariGames Atla11s_35: 8970805368265993055
+      AtariGames Atla11s_36: -7475500615788699882
+      AtariGames Atla11s_37: 3201174853884996839
+      AtariGames Atla11s_38: -160075125966062195
+      AtariGames Atla11s_39: 5309069473653323482
+      AtariGames Atla11s_4: -6352453982261701016
+      AtariGames Atla11s_40: -2240184038582334826
+      AtariGames Atla11s_41: -7189985900908922951
+      AtariGames Atla11s_42: 2078865698864318172
+      AtariGames Atla11s_43: -900741595843697224
+      AtariGames Atla11s_44: -6426250005861991089
+      AtariGames Atla11s_45: 7065724391610108952
+      AtariGames Atla11s_46: 6699203470894539529
+      AtariGames Atla11s_47: -8953046746749172824
+      AtariGames Atla11s_48: -3049041743003442028
+      AtariGames Atla11s_49: -2581086977769462761
+      AtariGames Atla11s_5: -5889859911510260252
+      AtariGames Atla11s_50: -2916803292507178586
+      AtariGames Atla11s_51: -8218233452133634561
+      AtariGames Atla11s_52: -8354973133423971045
+      AtariGames Atla11s_53: -1379227974871858275
+      AtariGames Atla11s_54: 4563871197375452467
+      AtariGames Atla11s_55: 5430986968719219208
+      AtariGames Atla11s_56: 7175469788387607954
+      AtariGames Atla11s_57: -5830991155314712218
+      AtariGames Atla11s_58: 3925106764254895146
+      AtariGames Atla11s_59: -901443275083752723
+      AtariGames Atla11s_6: -8992301027313894652
+      AtariGames Atla11s_60: -5878787797139898194
+      AtariGames Atla11s_61: -377785223981241829
+      AtariGames Atla11s_62: 6691105146286152014
+      AtariGames Atla11s_63: -26558570219741835
+      AtariGames Atla11s_64: -419368054697576477
+      AtariGames Atla11s_65: -2976075749428561452
+      AtariGames Atla11s_66: -6368668092347044194
+      AtariGames Atla11s_67: -5386503671377207367
+      AtariGames Atla11s_7: 1750880452002155707
+      AtariGames Atla11s_8: -3908581991811850714
+      AtariGames Atla11s_9: 2578923822503166820
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

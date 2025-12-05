@@ -18,6 +18,26 @@ public class GoldCore:Component
         }
     }
 
+    public float GoldX
+    {
+        get { return goldX; }
+
+        set
+        {
+            goldX = value;
+        }
+    }
+
+    public float Debt
+    {
+        get{return debt;}
+
+        set
+        {
+            debt = value;
+        }
+    }
+
     public void PayDebt()
     {
         if(gold<debt)

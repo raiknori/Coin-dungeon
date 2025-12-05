@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CoinLoader:Component
 {
     [SerializeField] Coin coin1;
     [SerializeField] Coin coin2;
     [SerializeField] CoinData[] coinsData;
+    [SerializeField] CoinAnimation coinAnimation;
 
     void GetCoins()
     {
@@ -25,16 +27,23 @@ public class CoinLoader:Component
 
     }
 
+    void Ineractable(bool ineractable)
+    {
+        coin1.Ineractable = ineractable;
+        coin2.Ineractable =ineractable;
+    }
+
     public void ShowCoins()
     {
         GetCoins();
 
-        //show coins + anim
+        coinAnimation.DoShowAnim();
     }
 
     public void HideCoins()
     {
-        //hide coins + anim
+
+        coinAnimation.DoHideAnim();
     }
 
 }

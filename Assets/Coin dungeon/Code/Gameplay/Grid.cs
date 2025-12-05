@@ -57,6 +57,11 @@ public class Grid:MonoBehaviour
     public void GridLoad()
     {
         MakeGrid();
+        NewGrid();
+    }
+
+    public void NewGrid()
+    {
         SpawnPlayer();
         Spawn();
     }
@@ -83,6 +88,7 @@ public class Grid:MonoBehaviour
     [SerializeField][Range(1, 5)] int enemyMaxAmount;
     List<Vector2Int> spawnPoints = new List<Vector2Int>();
     List<GameObject> spawnPointsGO = new List<GameObject>();
+    [SerializeField] FloorCore floorCore;
 
     public void RemoveSpawnPoint(Vector2Int target)
     {
@@ -94,6 +100,10 @@ public class Grid:MonoBehaviour
 
             spawnPoints.Remove(target);
 
+            if(spawnPoints.Count <= 0)
+            {
+                floorCore.FloorCount++;
+            }
 
         }
     }

@@ -20,6 +20,10 @@ public class HealthCore:Component
         }
     }
 
+    public void MakeMaxHealth()
+    {
+        Health = 3;
+    }
     public void Death()
     {
         game.LooseGameDeath();
