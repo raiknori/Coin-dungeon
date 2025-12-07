@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class CoinFlipping
+public class CoinFlipping:MonoBehaviour
 {
 
     [SerializeField] AttackCore attackCore;
@@ -13,6 +13,7 @@ public class CoinFlipping
     Coin selectedCoin;
     bool coinSelected = false;
     [SerializeField] CoinAnimation coinAnimation;
+    [SerializeField] CoinLoader coinLoader;
     public void Flip(Vector2Int target)
     {
 
@@ -29,6 +30,8 @@ public class CoinFlipping
     public IEnumerator SelectingCoin()
     {
         coinSelected = false;
+        coinLoader.ShowCoins();
+        yield return new WaitForSeconds(coinAnimation.MoveDuration);
 
         selectCoinText?.SetActive(true);
         while (!coinSelected)
@@ -38,6 +41,8 @@ public class CoinFlipping
         }
 
         selectCoinText?.SetActive(false);
+
+        coinLoader.HideCoins();
 
     }
 

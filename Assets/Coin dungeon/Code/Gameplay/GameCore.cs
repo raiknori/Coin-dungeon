@@ -25,7 +25,6 @@ public class GameCore:MonoBehaviour
         floors.FirstFloor();
         transitionPanel.FadeOut();
         healthText.SetActive(true);
-        
         //AllPlayingComponents.gameObject.SetActive(true);
         //reset all playing components;
 

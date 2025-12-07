@@ -13,6 +13,13 @@ public class CoinAnimation:MonoBehaviour
     DG.Tweening.Sequence sequenceFlip1;
     DG.Tweening.Sequence sequenceFlip2;
 
+    public float MoveDuration
+    {
+        get { return moveDuration; }
+
+        private set { moveDuration = value; }   
+    }
+
 
     public void DoShowAnim()
     {

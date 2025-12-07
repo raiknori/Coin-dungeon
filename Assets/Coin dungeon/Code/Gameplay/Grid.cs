@@ -1,4 +1,5 @@
 
+using NUnit.Framework.Internal.Commands;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -121,10 +122,10 @@ public class Grid : MonoBehaviour
 
     void Spawn()
     {
-        int enemyAmount = UnityEngine.Random.Range(1, enemyMaxAmount);
+        int enemyAmount = UnityEngine.Random.Range(1, enemyMaxAmount+1);
 
 
-        for (int i = 0; i < enemyAmount; i++)
+        for (int i = 0; i < enemyAmount+1; i++)
         {
             Vector2Int spawnPoint;
 
@@ -132,26 +133,27 @@ public class Grid : MonoBehaviour
             {
                 spawnPoint = Utils.RandomVector2(0, 7, 0, 3);
 
-            } while ((spawnPoints.Contains(spawnPoint)) || CheckBorderingPosition(playerPos, spawnPoint));
+            } while ((spawnPoints.Contains(spawnPoint)) || CheckBorderingPosition(playerPos, spawnPoint) || spawnPoint==playerPos);
 
             spawnPoints.Add(spawnPoint);
 
-            foreach (var sp in spawnPoints)
-            {
-                Debug.Log($"Enemy will be spawned at: {sp.x}; {sp.y}; (Position: ${Position(sp)})");
+        }
 
-                var gameObj = (Instantiate(GetEnemy(), new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform));
-                gameObj.transform.localPosition = Position(sp);
+        foreach (var sp in spawnPoints)
+        {
+            Debug.Log($"Enemy will be spawned at: {sp.x}; {sp.y}; (Position: ${Position(sp)})");
 
-                spawnPointsGO.Add(gameObj);
-            }
+            var gameObj = (Instantiate(GetEnemy(), new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform));
+            gameObj.transform.localPosition = Position(sp);
+
+            spawnPointsGO.Add(gameObj);
         }
     }
 
-    [SerializeField] GameObject testEnemyPrefab;
+    [SerializeField] GameObject[] enemiesPrefabs;
     GameObject GetEnemy()
     {
-        return testEnemyPrefab;
+        return enemiesPrefabs[UnityEngine.Random.Range(0,enemiesPrefabs.Length)];
     }
 
     void Disappear(GameObject gbject)

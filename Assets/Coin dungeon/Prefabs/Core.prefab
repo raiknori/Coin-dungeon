@@ -17,7 +17,10 @@ GameObject:
   - component: {fileID: 8462750089694011083}
   - component: {fileID: 6608842985529655940}
   - component: {fileID: 6379401143029225942}
+  - component: {fileID: 3876550979470831629}
   - component: {fileID: 8295640246383768971}
+  - component: {fileID: 5050954858603619019}
+  - component: {fileID: 2068592545187023670}
   m_Layer: 0
   m_Name: Core
   m_TagString: Untagged
@@ -167,6 +170,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9490711cabe62f4f87fb2c185825fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinFlipping: {fileID: 0}
+--- !u!114 &3876550979470831629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d1b8d868858c14e976ab033271e633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCore: {fileID: 6379401143029225942}
+  grid: {fileID: 0}
+  goldCore: {fileID: 6867828853609331775}
+  health: {fileID: 6408231957371903305}
+  selectCoinText: {fileID: 0}
+  coinAnimation: {fileID: 5050954858603619019}
+  coinLoader: {fileID: 2068592545187023670}
 --- !u!114 &8295640246383768971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,3 +207,40 @@ MonoBehaviour:
   game: {fileID: 3094119645385083075}
   tutorialText: {fileID: 0}
   cooldDown: 0.5
+--- !u!114 &5050954858603619019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a72680160e19a49b7c2c32c256af72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipDuration: 1
+  moveDuration: 2
+  coin1: {fileID: 0}
+  coin2: {fileID: 0}
+  coinShowTransform: {fileID: 0}
+  coinHideTransofrm: {fileID: 0}
+--- !u!114 &2068592545187023670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71eb4179dc2a00042948b2799ebfcf0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin1: {fileID: 0}
+  coin2: {fileID: 0}
+  coinsData:
+  - {fileID: 11400000, guid: 1cb902bbb93ef7c41be183bc7535a17b, type: 2}
+  - {fileID: 11400000, guid: c3cd903965a885d42a02ef6084036f17, type: 2}
+  - {fileID: 11400000, guid: d26cf0219d10aa049b4d2993657da2d4, type: 2}
+  coinAnimation: {fileID: 5050954858603619019}

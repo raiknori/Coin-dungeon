@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class CoinLoader:Component
+public class CoinLoader:MonoBehaviour
 {
     [SerializeField] Coin coin1;
     [SerializeField] Coin coin2;

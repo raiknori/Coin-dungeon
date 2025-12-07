@@ -40,6 +40,8 @@ public class FloorCore:MonoBehaviour
     {
         
         grid.GridLoad();
+        gameObject.GetComponent<TurnCore>().enabled = true;
+        
     }
 
     public void NextFloor()
