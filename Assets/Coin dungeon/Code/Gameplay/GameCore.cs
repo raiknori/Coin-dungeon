@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class GameCore:Component
+public class GameCore:MonoBehaviour
 {
     bool gameStopped = true;
     [SerializeField] Grid grid;
@@ -23,9 +23,11 @@ public class GameCore:Component
         
         gameStopped = false;
         floors.FirstFloor();
-        healthText.SetActive(true);
         transitionPanel.FadeOut();
+        healthText.SetActive(true);
+        
         //AllPlayingComponents.gameObject.SetActive(true);
+        //reset all playing components;
 
     }
 

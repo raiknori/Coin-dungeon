@@ -27,7 +27,13 @@ public class FloorCore:MonoBehaviour
                 return;
             }
 
-            grid.NewGrid();
+            if(floorCount%2==0)
+            {
+                //choice between recover and risk
+                
+            }
+
+            NextFloor();
         }
     }
     public void FirstFloor()
@@ -44,6 +50,7 @@ public class FloorCore:MonoBehaviour
     public void NextFloorRisk()
     {
         gold.GoldX += 0.8f;
+        NextFloor();
     }
     public void Recover()
     {

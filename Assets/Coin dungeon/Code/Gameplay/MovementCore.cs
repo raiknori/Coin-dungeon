@@ -8,7 +8,6 @@ public class MovementCore:MonoBehaviour
     [SerializeField] Grid grid;
 
     [SerializeField] GameObject player;
-    [SerializeField] ImpactCore impactCore;
     [SerializeField] AttackCore attackCore;
 
     Coroutine moveCoroutine;
@@ -85,7 +84,7 @@ public class MovementCore:MonoBehaviour
         }
 
         yield return StartCoroutine(attackCore.Attack(target));
-        impactCore.Shake();
+        ImpactCore.Shake();
 
 
         elapsed = 0;
@@ -124,7 +123,7 @@ public class MovementCore:MonoBehaviour
         }
 
 
-            impactCore.Shake();
+        ImpactCore.Shake();
 
 
         elapsed = 0;

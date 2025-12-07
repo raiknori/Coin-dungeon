@@ -1,12 +1,12 @@
 using System.Diagnostics;
 using UnityEngine;
 
-public class GoldCore:Component
+public class GoldCore:MonoBehaviour
 {
     float gold = 0f;
 
     [SerializeField] [Range(0.1f,10f)] float goldX;
-    [SerializeField] float debt;
+    [SerializeField] [Range(20,32)] float debt;
     [SerializeField] GameCore game;
     public float Gold
     {
@@ -30,14 +30,17 @@ public class GoldCore:Component
 
     public float Debt
     {
-        get{return debt;}
+        get
+        {
+
+            return debt;
+        }
 
         set
         {
             debt = value;
         }
     }
-
     public void PayDebt()
     {
         if(gold<debt)

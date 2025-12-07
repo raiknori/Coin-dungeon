@@ -1,8 +1,11 @@
+using DG.Tweening;
+using UnityEngine;
+
 class ImpactCore
 {
-    public void Shake()
+    public static void Shake()
     {
-
+        Camera.main.transform.DOShakePosition(0.5f);
     }
     
 
