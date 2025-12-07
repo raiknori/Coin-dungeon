@@ -27,7 +27,7 @@ public class Grid : MonoBehaviour
         {
             if ((value.x > 7 || value.x < 0) || (value.y > 3 || value.y < 0))
             {
-                movementCore.DenyMove(value);
+                movementCore.DenyMove();
                 return;
             }
 

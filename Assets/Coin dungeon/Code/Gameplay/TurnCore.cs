@@ -76,11 +76,11 @@ public class TurnCore:MonoBehaviour
 
         if (directionMove == DirectionMove.up)
         {
-            grid.PlayerPos = new Vector2Int(grid.PlayerPos.x, grid.PlayerPos.y+1);
+            grid.PlayerPos = new Vector2Int(grid.PlayerPos.x, grid.PlayerPos.y-1);
         }
         else if(directionMove == DirectionMove.down)
         {
-            grid.PlayerPos = new Vector2Int(grid.PlayerPos.x, grid.PlayerPos.y-1);
+            grid.PlayerPos = new Vector2Int(grid.PlayerPos.x, grid.PlayerPos.y+1);
         }
         else if( directionMove == DirectionMove.left)
         {

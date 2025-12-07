@@ -3416,6 +3416,14 @@ PrefabInstance:
       propertyPath: grid
       value: 
       objectReference: {fileID: 1307000676}
+    - target: {fileID: 8295640246383768971, guid: 75c895b472971894da33b7403a9e9b0a, type: 3}
+      propertyPath: grid
+      value: 
+      objectReference: {fileID: 1307000676}
+    - target: {fileID: 8295640246383768971, guid: 75c895b472971894da33b7403a9e9b0a, type: 3}
+      propertyPath: tutorialText
+      value: 
+      objectReference: {fileID: 1487962289}
     - target: {fileID: 8462750089694011083, guid: 75c895b472971894da33b7403a9e9b0a, type: 3}
       propertyPath: textTMP
       value: 

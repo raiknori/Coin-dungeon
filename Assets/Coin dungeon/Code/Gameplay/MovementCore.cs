@@ -24,11 +24,9 @@ public class MovementCore:MonoBehaviour
 
     }
 
-    public void DenyMove(Vector2Int target)
+    public void DenyMove()
     {
-
-
-        StartCoroutine(DoDenyMove(target));
+        ImpactCore.Shake();
     }
 
     [SerializeField][Range(0,5f)] float moveDuration;
@@ -93,7 +91,7 @@ public class MovementCore:MonoBehaviour
         {
             elapsed += Time.deltaTime;
 
-            player.transform.localPosition = Vector3.Lerp(grid.Position(target), startPosition, elapsed / moveDuration);
+            player.transform.localPosition = Vector3.Lerp(grid.Position(target), startPosition, elapsed / (moveDuration/2));
 
             yield return null;
         }
@@ -103,43 +101,6 @@ public class MovementCore:MonoBehaviour
     }
 
 
-
-    IEnumerator DoDenyMove(Vector2Int target)
-    {
-        isMoving = true;
-
-        var startPosition = player.transform.localPosition;
-
-        float elapsed = 0;
-
-        while (elapsed < moveDuration)
-        {
-            elapsed += Time.deltaTime;
-
-            player.transform.localPosition = Vector3.Lerp(startPosition, grid.Position(target), elapsed / moveDuration);
-
-            yield return null;
-
-        }
-
-
-        ImpactCore.Shake();
-
-
-        elapsed = 0;
-
-        while (elapsed < moveDuration / 2)
-        {
-            elapsed += Time.deltaTime;
-
-            player.transform.localPosition = Vector3.Lerp(grid.Position(target), startPosition, elapsed / moveDuration);
-
-            yield return null;
-        }
-
-
-        isMoving = false;
-    }
 
  
 
