@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3281302769140452700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3020153373105287468}
+  - component: {fileID: 3094119645385083075}
+  - component: {fileID: 8636230199767246938}
+  - component: {fileID: 672604417590966686}
+  - component: {fileID: 6867828853609331775}
+  - component: {fileID: 6408231957371903305}
+  - component: {fileID: 8462750089694011083}
+  - component: {fileID: 6608842985529655940}
+  - component: {fileID: 6379401143029225942}
+  m_Layer: 0
+  m_Name: Core
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3020153373105287468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3094119645385083075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2809c080a9e92064da5116f1b36622f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
+  floors: {fileID: 672604417590966686}
+  transitionPanel: {fileID: 0}
+  healthText: {fileID: 0}
+  restart: {fileID: 8636230199767246938}
+--- !u!114 &8636230199767246938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dccf101e1667d941ba41772332cab76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 3094119645385083075}
+  transitionPanel: {fileID: 0}
+  restartText: {fileID: 0}
+--- !u!114 &672604417590966686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475ee6405fb3c3244892dca99d4f4027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
+  health: {fileID: 6408231957371903305}
+  finalFloor: 3
+  gold: {fileID: 6867828853609331775}
+  game: {fileID: 3094119645385083075}
+  transitionPanel: {fileID: 0}
+--- !u!114 &6867828853609331775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eaf760ed1d31fe4daf1b4ba80938bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldX: 0.1
+  debt: 20
+  game: {fileID: 3094119645385083075}
+--- !u!114 &6408231957371903305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb00f8c7fa0fba48896aac8a1120bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  game: {fileID: 3094119645385083075}
+  healthText: {fileID: 0}
+--- !u!114 &8462750089694011083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3713cf0923ffd64b826592cadca22da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 3094119645385083075}
+  textTMP: {fileID: 0}
+  textPanel: {fileID: 0}
+  storyLines:
+  - hello
+  - your debt is 20 gold
+  waitForInputText: {fileID: 0}
+--- !u!114 &6608842985529655940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2d27fe8c11e5f45a7fe5ee04997ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid: {fileID: 0}
+  player: {fileID: 0}
+  attackCore: {fileID: 6379401143029225942}
+  moveDuration: 0.29
+--- !u!114 &6379401143029225942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9490711cabe62f4f87fb2c185825fc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
