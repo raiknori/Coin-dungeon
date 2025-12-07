@@ -7,7 +7,7 @@ public class MovementCore:MonoBehaviour
 {
     [SerializeField] Grid grid;
 
-    [SerializeField] GameObject player;
+    public GameObject player;
     [SerializeField] AttackCore attackCore;
 
     Coroutine moveCoroutine;
@@ -45,7 +45,7 @@ public class MovementCore:MonoBehaviour
     {
         isMoving = true;
 
-        var startPosition = player.transform.position;
+        var startPosition = player.transform.localPosition;
 
         float elapsed = 0;
 
@@ -53,7 +53,7 @@ public class MovementCore:MonoBehaviour
         {
             elapsed += Time.deltaTime;
 
-            player.transform.position = Vector3.Lerp(startPosition, grid.Position(grid.PlayerPos), elapsed/moveDuration);
+            player.transform.localPosition = Vector3.Lerp(startPosition, grid.Position(grid.PlayerPos), elapsed/moveDuration);
 
             yield return null;
 
@@ -69,7 +69,7 @@ public class MovementCore:MonoBehaviour
 
         yield return StartCoroutine(attackCore.SelectCoin());
 
-        var startPosition = player.transform.position;
+        var startPosition = player.transform.localPosition;
 
         float elapsed = 0;
 
@@ -77,7 +77,7 @@ public class MovementCore:MonoBehaviour
         {
             elapsed += Time.deltaTime;
 
-            player.transform.position = Vector3.Lerp(startPosition, grid.Position(target), elapsed / moveDuration);
+            player.transform.localPosition = Vector3.Lerp(startPosition, grid.Position(target), elapsed / moveDuration);
 
             yield return null;
 
@@ -93,7 +93,7 @@ public class MovementCore:MonoBehaviour
         {
             elapsed += Time.deltaTime;
 
-            player.transform.position = Vector3.Lerp(grid.Position(target), startPosition, elapsed / moveDuration);
+            player.transform.localPosition = Vector3.Lerp(grid.Position(target), startPosition, elapsed / moveDuration);
 
             yield return null;
         }
@@ -108,7 +108,7 @@ public class MovementCore:MonoBehaviour
     {
         isMoving = true;
 
-        var startPosition = player.transform.position;
+        var startPosition = player.transform.localPosition;
 
         float elapsed = 0;
 
@@ -116,7 +116,7 @@ public class MovementCore:MonoBehaviour
         {
             elapsed += Time.deltaTime;
 
-            player.transform.position = Vector3.Lerp(startPosition, grid.Position(target), elapsed / moveDuration);
+            player.transform.localPosition = Vector3.Lerp(startPosition, grid.Position(target), elapsed / moveDuration);
 
             yield return null;
 
@@ -132,7 +132,7 @@ public class MovementCore:MonoBehaviour
         {
             elapsed += Time.deltaTime;
 
-            player.transform.position = Vector3.Lerp(grid.Position(target), startPosition, elapsed / moveDuration);
+            player.transform.localPosition = Vector3.Lerp(grid.Position(target), startPosition, elapsed / moveDuration);
 
             yield return null;
         }

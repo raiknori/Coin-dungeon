@@ -4,21 +4,22 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using static UnityEngine.GraphicsBuffer;
 
-public class Grid:MonoBehaviour
+public class Grid : MonoBehaviour
 {
 
-    Vector2[,] grid = new Vector2[4, 8];
+    Vector2[,] grid = new Vector2[8, 4];
 
     Vector2Int playerPos = new Vector2Int();
 
     [SerializeField] MovementCore movementCore;
-    
+
 
     public Vector2Int PlayerPos
     {
-        get 
+        get
         {
             return playerPos;
         }
@@ -36,16 +37,18 @@ public class Grid:MonoBehaviour
                 return;
             }
 
-            
-            
+
+
             playerPos = value;
 
 
             movementCore.DeffaultMove();
-            
+
         }
     }
-    
+
+    GameObject PlayerGObj;
+
     public Vector2 Position(Vector2Int pos)
     {
         if (pos.x >= grid.GetLength(0) || pos.y >= grid.GetLength(1))
@@ -68,20 +71,27 @@ public class Grid:MonoBehaviour
 
     void MakeGrid()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 8; i++)
         {
 
-            for (int j = 0; j < 8; j++)
+            for (int j = 0; j < 4; j++)
             {
-                grid[i, j] = new Vector2(-i * 50, j * 50);
+                grid[i, j] = new Vector2(i * 50, -j * 50);
             }
         }
 
     }
 
+    [SerializeField] GameObject playerPrefab;
     void SpawnPlayer()
     {
         playerPos = Utils.RandomVector2(0, 7, 0, 3);
+
+        PlayerGObj = Instantiate(playerPrefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
+        PlayerGObj.transform.localPosition = Position(playerPos);
+
+        movementCore.player = PlayerGObj;
+        Debug.Log($"Player pos: {playerPos}; {Position(playerPos)}");
     }
 
 
@@ -92,7 +102,7 @@ public class Grid:MonoBehaviour
 
     public void RemoveSpawnPoint(Vector2Int target)
     {
-        if(spawnPoints.Contains(target))
+        if (spawnPoints.Contains(target))
         {
             Disappear(spawnPointsGO[spawnPoints.IndexOf(target)]);
 
@@ -100,7 +110,7 @@ public class Grid:MonoBehaviour
 
             spawnPoints.Remove(target);
 
-            if(spawnPoints.Count <= 0)
+            if (spawnPoints.Count <= 0)
             {
                 floorCore.FloorCount++;
             }
@@ -122,15 +132,18 @@ public class Grid:MonoBehaviour
             {
                 spawnPoint = Utils.RandomVector2(0, 7, 0, 3);
 
-                spawnPoints.Add(spawnPoint);
+            } while ((spawnPoints.Contains(spawnPoint)) || CheckBorderingPosition(playerPos, spawnPoint));
 
+            spawnPoints.Add(spawnPoint);
 
-
-            } while(!(spawnPoints.Contains(spawnPoint)) || CheckBorderingPosition(playerPos,spawnPoint));
-
-            foreach(var sp in spawnPoints)
+            foreach (var sp in spawnPoints)
             {
-                spawnPointsGO.Add(Instantiate(GetEnemy(),Position(sp),Quaternion.identity ,gameObject.transform));
+                Debug.Log($"Enemy will be spawned at: {sp.x}; {sp.y}; (Position: ${Position(sp)})");
+
+                var gameObj = (Instantiate(GetEnemy(), new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform));
+                gameObj.transform.localPosition = Position(sp);
+
+                spawnPointsGO.Add(gameObj);
             }
         }
     }
@@ -150,7 +163,7 @@ public class Grid:MonoBehaviour
         }
     }
 
-    [SerializeField][Range(0,1f)] float disappearTime;
+    [SerializeField][Range(0, 1f)] float disappearTime;
     IEnumerator DoDisappear(SpriteRenderer spriteRenderer)
     {
         float elapsed = 0;

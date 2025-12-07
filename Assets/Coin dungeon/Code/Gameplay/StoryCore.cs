@@ -22,6 +22,8 @@ public class StoryCore:MonoBehaviour
 
     IEnumerator DoStory()
     {
+        textPanel.gameObject.SetActive(true);
+
         foreach (var storyLine in storyLines)
         {
 
