@@ -7,7 +7,7 @@ public class AttackCore:MonoBehaviour
 
     public IEnumerator Attack(Vector2Int target)
     {
-        coinFlipping.Flip(target);
+        yield return StartCoroutine( coinFlipping.Flip(target));
         yield break;
     }
 

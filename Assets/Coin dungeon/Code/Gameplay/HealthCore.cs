@@ -23,6 +23,7 @@ public class HealthCore:MonoBehaviour
         }
     }
 
+
     public void MakeMaxHealth()
     {
         Health = 3;

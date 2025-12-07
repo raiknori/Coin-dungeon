@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winChance: 0.3
   goldX: 3
-  coinSpriteHead: {fileID: 6842600090714606236, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
-  coinSpriteTail: {fileID: -841040678384945940, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
-  coinSpriteDeffault: {fileID: 5048345779837316265, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
-  name: Broken coin
-  description: 'HIGH RISK HIGH REWARD\nChance of head: 30% \n gold: x3'
+  coinSpriteHead: {fileID: -2036850657575301247, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
+  coinSpriteTail: {fileID: 7446228524267497294, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
+  coinSpriteDeffault: {fileID: -8372604312795706455, guid: 1d5f3fd648f0c88439c7bffd84865f9e, type: 3}
+  name: broken coin
+  description: 'high risk high reward\nchance of head: 30% \n gold: x3'

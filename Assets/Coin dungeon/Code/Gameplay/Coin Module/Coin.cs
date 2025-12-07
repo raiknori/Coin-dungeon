@@ -14,10 +14,10 @@ public class Coin : MonoBehaviour, IPointerClickHandler
 
 
 
-    SpriteRenderer coinSpriteHead;
-    SpriteRenderer coinSpriteTail;
-    SpriteRenderer coinSpriteDeffault;
-    CoinFlipping coinFlipping;
+    public Sprite coinSpriteHead;
+    public Sprite coinSpriteTail;
+    public Sprite coinSpriteDeffault;
+    [SerializeField] CoinFlipping coinFlipping;
     string description;
     string name;
     bool ineractable =true;
@@ -25,6 +25,7 @@ public class Coin : MonoBehaviour, IPointerClickHandler
 
     [SerializeField] TooltipPanel tooltipPanel;
     [SerializeField] Collider2D collider;
+    public SpriteRenderer spriteRenderer;
     public float GoldX
     {
         get { return goldX; }
@@ -54,9 +55,11 @@ public class Coin : MonoBehaviour, IPointerClickHandler
     {
         winChance = data.winChance;
         goldX = data.goldX;
-        coinSpriteHead.sprite = data.coinSpriteHead;
-        coinSpriteTail.sprite = data.coinSpriteTail;
-        coinSpriteDeffault.sprite = data.coinSpriteDeffault;
+        coinSpriteHead = data.coinSpriteHead;
+        coinSpriteTail = data.coinSpriteTail;
+        coinSpriteDeffault = data.coinSpriteDeffault;
+
+        spriteRenderer.sprite = coinSpriteDeffault;
 
         name = data.name;
         description = data.description;

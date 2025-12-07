@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 
 public class CoinAnimation:MonoBehaviour
@@ -6,6 +7,7 @@ public class CoinAnimation:MonoBehaviour
     [SerializeField][Range(0.3f,3f)] float flipDuration;
     [SerializeField][Range(0.3f, 3f)] float moveDuration;
     [SerializeField] GameObject coin1; [SerializeField] GameObject coin2;
+    [SerializeField] Coin coin1Coin; [SerializeField] Coin coin2Coin;
 
     [SerializeField] Transform coinShowTransform;
     [SerializeField] Transform coinHideTransofrm;
@@ -20,7 +22,13 @@ public class CoinAnimation:MonoBehaviour
         private set { moveDuration = value; }   
     }
 
+    public float FlipDuration
+    {
+        get { return flipDuration; }
 
+        set { flipDuration = value; }
+    }
+    
     public void DoShowAnim()
     {
         coin1.transform.DOMoveX(coinShowTransform.position.x, moveDuration);
@@ -31,16 +39,13 @@ public class CoinAnimation:MonoBehaviour
 
     public void DoFlipAnim()
     {
-        sequenceFlip1 = DOTween.Sequence();
-        sequenceFlip1.Append(coin1.transform.DOScaleX(-1, flipDuration / 2)).Append(sequenceFlip1.PrependInterval(0.3f)).Append(coin1.transform.transform.DOScaleX(1, flipDuration / 2));
+        coin1Coin.spriteRenderer.sprite = coin1Coin.coinSpriteDeffault;
+        coin2Coin.spriteRenderer.sprite = coin2Coin.coinSpriteDeffault;
 
-        sequenceFlip2 = DOTween.Sequence();
-        sequenceFlip2.Append(coin2.transform.DOScaleX(-1, flipDuration / 2)).Append(sequenceFlip2.PrependInterval(0.3f)).Append(coin2.transform.transform.DOScaleX(1, flipDuration / 2));
-        sequenceFlip1.Join(sequenceFlip2);
+        coin1.transform.DOShakePosition(flipDuration);
+        coin2.transform.DOShakePosition(flipDuration);
 
     }
-
-
 
     public void DoHideAnim()
     {

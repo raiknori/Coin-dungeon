@@ -60,12 +60,14 @@ public class Grid : MonoBehaviour
 
     public void GridLoad()
     {
+        ClearGrid();
         MakeGrid();
         NewGrid();
     }
 
     public void NewGrid()
     {
+        ClearGrid();
         SpawnPlayer();
         Spawn();
     }
@@ -79,6 +81,31 @@ public class Grid : MonoBehaviour
             {
                 grid[i, j] = new Vector2(i * 50, -j * 50);
             }
+        }
+
+    }
+
+    void ClearGrid()
+    {
+        if(PlayerGObj!=null)
+        {
+            Destroy(PlayerGObj);
+            
+        }
+
+        if(spawnPointsGO.Count>0)
+        {
+            foreach(var go in spawnPointsGO)
+            {
+                Destroy(go);
+            }
+
+            spawnPointsGO.Clear();
+        }
+
+        if(spawnPoints.Count>0)
+        {
+            spawnPoints.Clear();
         }
 
     }
@@ -117,6 +144,8 @@ public class Grid : MonoBehaviour
             }
 
         }
+
+
     }
 
 

@@ -18,7 +18,7 @@ public class CoinLoader:MonoBehaviour
             randomIndex1 = UnityEngine.Random.Range(0, coinsData.Length );
             randomIndex2 = UnityEngine.Random.Range(0, coinsData.Length );
         }
-        while (randomIndex1 != randomIndex2);
+        while (randomIndex1 == randomIndex2);
 
         coin1.LoadData( coinsData[randomIndex1]);
         coin2.LoadData( coinsData[randomIndex2]);

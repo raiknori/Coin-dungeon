@@ -38,7 +38,8 @@ public class FloorCore:MonoBehaviour
     }
     public void FirstFloor()
     {
-        
+
+        health.MakeMaxHealth();
         grid.GridLoad();
         gameObject.GetComponent<TurnCore>().enabled = true;
         

@@ -14,18 +14,24 @@ public class CoinFlipping:MonoBehaviour
     bool coinSelected = false;
     [SerializeField] CoinAnimation coinAnimation;
     [SerializeField] CoinLoader coinLoader;
-    public void Flip(Vector2Int target)
+    public IEnumerator Flip(Vector2Int target)
     {
 
         coinAnimation.DoFlipAnim();
         if (selectedCoin.DoRoll())
         {
             Win(target);
+            selectedCoin.spriteRenderer.sprite = selectedCoin.coinSpriteHead;
         }
         else
         {
+            selectedCoin.spriteRenderer.sprite = selectedCoin.coinSpriteTail;
             Loose();
         }
+
+        yield return new WaitForSeconds(coinAnimation.FlipDuration);
+
+        coinLoader.HideCoins();
     }
     public IEnumerator SelectingCoin()
     {
@@ -40,9 +46,10 @@ public class CoinFlipping:MonoBehaviour
             yield return null;
         }
 
+        Debug.Log("We jumped from while loop");
+
         selectCoinText?.SetActive(false);
 
-        coinLoader.HideCoins();
 
     }
 
@@ -56,6 +63,7 @@ public class CoinFlipping:MonoBehaviour
     {
         grid.RemoveSpawnPoint(target);
         goldCore.Gold += 1*selectedCoin.GoldX;
+        //show text
     }
 
     void Loose()
