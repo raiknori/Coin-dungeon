@@ -11,6 +11,7 @@ public class GameCore:MonoBehaviour
     [SerializeField] GameObject goldText;
     [SerializeField] GameObject goldXText;
     [SerializeField] Restart restart;
+    [SerializeField] Ending ending;
     public bool GameStopped
     {
         get { return gameStopped; } 
@@ -18,19 +19,16 @@ public class GameCore:MonoBehaviour
         set { gameStopped = value; }
     }
 
-
-    //AllPlayingComponents.gameObject.SetActive(false);
     public void NewGame()
     {
         
         gameStopped = false;
+        floors.ClearFloor();
         floors.FirstFloor();
         transitionPanel.FadeOut();
         healthText.SetActive(true);
         goldText.SetActive(true);
         goldXText.SetActive(true);
-        //AllPlayingComponents.gameObject.SetActive(true);
-        //reset all playing components;
 
     }
 
@@ -42,7 +40,7 @@ public class GameCore:MonoBehaviour
         goldText.SetActive(false);
         goldXText.SetActive(false);
         restart.WaitForRestart();
-        //text WaitForSeconds(transitionPanel.FadeDuration) you won
+        ending.StartWinEnding();
 
     }
 
@@ -55,8 +53,7 @@ public class GameCore:MonoBehaviour
         goldText.SetActive(false);
         goldXText.SetActive(false);
         restart.WaitForRestart();
-
-        //text WaitForSeconds(transitionPanel.FadeDuration) you died
+        ending.StartDeathEnding();
     }
 
     public void LooseGameDebt()
@@ -67,7 +64,7 @@ public class GameCore:MonoBehaviour
         goldText.SetActive(false);
         goldXText.SetActive(false);
         restart.WaitForRestart();
-        //text WaitForSeconds(transitionPanel.FadeDuration) you will end your life in slavery   
+        ending.StartDebtEnding();
     }
 
     

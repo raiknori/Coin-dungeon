@@ -9,7 +9,7 @@ public class FloorCore:MonoBehaviour
     [SerializeField][Range(3,10)] int finalFloor;
     [SerializeField] GoldCore gold;
     [SerializeField] GameCore game;
-    private int floorCount = 0;
+    private int floorCount = 1;
 
 
     [SerializeField][Range(1, 10)] int choiceEveryFloor;
@@ -40,6 +40,12 @@ public class FloorCore:MonoBehaviour
             NextFloor();
         }
     }
+
+    public void ClearFloor()
+    {
+        floorCount = 1;
+    }
+
     public void FirstFloor()
     {
         gold.ClearGold();
@@ -76,9 +82,9 @@ public class FloorCore:MonoBehaviour
         transitionPanel.FadeIn();
         yield return new WaitForSeconds(transitionPanel.FadeDuration);
         grid.NewGrid();
-        debtText.GetComponent<TextMeshProUGUI>().text = $"debt:{gold.Debt}";
+        debtText.GetComponent<TextMeshProUGUI>().text = $"debt:{gold.Debt}\nfloor:{floorCount}/{finalFloor}";
         debtText.FadeIn();
-        yield return new WaitForSeconds(debtText.FadeDuration);
+        yield return new WaitForSeconds(debtText.FadeDuration*2);
         debtText.FadeOut();
         transitionPanel.FadeOut();
         yield return new WaitForSeconds(transitionPanel.FadeDuration);

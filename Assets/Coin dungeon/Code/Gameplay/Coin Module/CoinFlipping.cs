@@ -89,7 +89,7 @@ public class CoinFlipping:MonoBehaviour
         earnedGoldText.FadeOut();
 
         grid.RemoveSpawnPoint(target);
-        goldCore.Gold += 1*selectedCoin.GoldX;
+        goldCore.Gold += 1*selectedCoin.GoldX*goldCore.GoldX;
     }
 
     void Loose()

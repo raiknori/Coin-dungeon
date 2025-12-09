@@ -19,10 +19,11 @@ public class GoldCore:MonoBehaviour
 
         set
         {
-            gold = value*goldX;
+
+            gold = value;
             
-            goldText.text = $"gold:{gold.ToString("0.###")}";
-            Debug.Log(gold);
+            goldText.text = $"gold:{gold.ToString("0.##")}";
+
             goldText.rectTransform.DOShakePosition(0.3f, 1, 20);
             //playsound gold;
         }
