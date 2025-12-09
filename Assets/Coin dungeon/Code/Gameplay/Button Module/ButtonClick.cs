@@ -8,9 +8,11 @@ public class ButtonClick : MonoBehaviour, IPointerClickHandler
     [SerializeField] FloorCore floor;
     [SerializeField] ButtonLoader buttonLoader;
     [SerializeField] bool recoverButton;
+    [SerializeField] AudioManager audioManager;
     public void OnPointerClick(PointerEventData eventData)
     {
-        //playSound;
+
+        audioManager.PlaySound("click");
 
         buttonLoader.HideButtons();
 

@@ -2,7 +2,7 @@
 - Project name: Coin dungeon
 - Unity version: Unity 6000.0.51f1
 - Active game object:
-  - Name: Core
+  - Name: RecoverButton
   - Tag: Untagged
-  - Layer: Default
+  - Layer: Clickable
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

@@ -21,6 +21,8 @@ public class CoinFlipping:MonoBehaviour
 
     [SerializeField] UIPanel earnedGoldText;
     [SerializeField] GameObject earnedGoldGo;
+
+    [SerializeField] AudioManager audioManager;
     public IEnumerator Flip(Vector2Int target)
     {
 
@@ -68,6 +70,7 @@ public class CoinFlipping:MonoBehaviour
 
     public void SelectCoin(Coin coin) //Listener to coin button ui
     {
+        audioManager.PlaySound("click");
         coinSelected = true;
         selectedCoin = coin;
     }

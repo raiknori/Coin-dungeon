@@ -9,6 +9,7 @@ public class MovementCore:MonoBehaviour
 
     public GameObject player;
     [SerializeField] AttackCore attackCore;
+    [SerializeField] AudioManager audioManager;
 
     Coroutine moveCoroutine;
     public void DeffaultMove()
@@ -27,6 +28,7 @@ public class MovementCore:MonoBehaviour
     public void DenyMove()
     {
         ImpactCore.Shake();
+        audioManager.PlaySound("deny");
     }
 
     [SerializeField][Range(0,5f)] float moveDuration;
@@ -47,7 +49,9 @@ public class MovementCore:MonoBehaviour
 
         float elapsed = 0;
 
-        while(elapsed < moveDuration)
+        audioManager.PlaySound("step");
+
+        while (elapsed < moveDuration)
         {
             elapsed += Time.deltaTime;
 
@@ -82,6 +86,7 @@ public class MovementCore:MonoBehaviour
         }
 
         yield return StartCoroutine(attackCore.Attack(target));
+        audioManager.PlaySound("deny");
         ImpactCore.Shake();
 
 
