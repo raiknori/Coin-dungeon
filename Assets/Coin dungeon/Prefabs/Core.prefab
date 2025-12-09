@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 8295640246383768971}
   - component: {fileID: 5050954858603619019}
   - component: {fileID: 2068592545187023670}
-  - component: {fileID: 4797649752880004356}
+  - component: {fileID: 2358685673919562521}
+  - component: {fileID: 7907650624896736750}
   m_Layer: 0
   m_Name: Core
   m_TagString: Untagged
@@ -60,6 +61,8 @@ MonoBehaviour:
   floors: {fileID: 672604417590966686}
   transitionPanel: {fileID: 0}
   healthText: {fileID: 0}
+  goldText: {fileID: 0}
+  goldXText: {fileID: 0}
   restart: {fileID: 8636230199767246938}
 --- !u!114 &8636230199767246938
 MonoBehaviour:
@@ -90,10 +93,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grid: {fileID: 0}
   health: {fileID: 6408231957371903305}
-  finalFloor: 3
+  finalFloor: 6
   gold: {fileID: 6867828853609331775}
   game: {fileID: 3094119645385083075}
+  choiceEveryFloor: 2
+  buttonLoader: {fileID: 2358685673919562521}
   transitionPanel: {fileID: 0}
+  debtText: {fileID: 0}
 --- !u!114 &6867828853609331775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,9 +112,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eaf760ed1d31fe4daf1b4ba80938bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldX: 0.1
+  goldX: 1
   debt: 20
   game: {fileID: 3094119645385083075}
+  goldText: {fileID: 0}
+  goldXText: {fileID: 0}
 --- !u!114 &6408231957371903305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb00f8c7fa0fba48896aac8a1120bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 6
   game: {fileID: 3094119645385083075}
   healthText: {fileID: 0}
 --- !u!114 &8462750089694011083
@@ -191,6 +199,10 @@ MonoBehaviour:
   selectCoinText: {fileID: 0}
   coinAnimation: {fileID: 5050954858603619019}
   coinLoader: {fileID: 2068592545187023670}
+  headOrTailText: {fileID: 0}
+  headOrTailGo: {fileID: 0}
+  earnedGoldText: {fileID: 0}
+  earnedGoldGo: {fileID: 0}
 --- !u!114 &8295640246383768971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +219,7 @@ MonoBehaviour:
   movementCore: {fileID: 6608842985529655940}
   game: {fileID: 3094119645385083075}
   tutorialText: {fileID: 0}
-  cooldDown: 0.5
+  cooldDown: 0.3
 --- !u!114 &5050954858603619019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,10 +232,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a72680160e19a49b7c2c32c256af72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flipDuration: 1
-  moveDuration: 2
+  flipDuration: 0.5
+  moveDuration: 1
   coin1: {fileID: 0}
   coin2: {fileID: 0}
+  coin1Coin: {fileID: 0}
+  coin2Coin: {fileID: 0}
   coinShowTransform: {fileID: 0}
   coinHideTransofrm: {fileID: 0}
 --- !u!114 &2068592545187023670
@@ -245,7 +259,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c3cd903965a885d42a02ef6084036f17, type: 2}
   - {fileID: 11400000, guid: d26cf0219d10aa049b4d2993657da2d4, type: 2}
   coinAnimation: {fileID: 5050954858603619019}
---- !u!114 &4797649752880004356
+--- !u!114 &2358685673919562521
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,12 +268,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 3281302769140452700}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33a72680160e19a49b7c2c32c256af72, type: 3}
+  m_Script: {fileID: 11500000, guid: 03648a1695be18a48a9db8f675215637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flipDuration: 1
+  buttonAnimation: {fileID: 7907650624896736750}
+--- !u!114 &7907650624896736750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3281302769140452700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cafb39f19d6833439baef86b84f3947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button1: {fileID: 0}
+  button2: {fileID: 0}
+  buttonShowTransform: {fileID: 0}
+  buttonHideTransform: {fileID: 0}
   moveDuration: 2
-  coin1: {fileID: 0}
-  coin2: {fileID: 0}
-  coinShowTransform: {fileID: 0}
-  coinHideTransofrm: {fileID: 0}

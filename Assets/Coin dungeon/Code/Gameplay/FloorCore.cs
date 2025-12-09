@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class FloorCore:MonoBehaviour
@@ -11,6 +12,8 @@ public class FloorCore:MonoBehaviour
     private int floorCount = 0;
 
 
+    [SerializeField][Range(1, 10)] int choiceEveryFloor;
+    [SerializeField] ButtonLoader buttonLoader;
     public int FloorCount
     {
         get
@@ -27,10 +30,11 @@ public class FloorCore:MonoBehaviour
                 return;
             }
 
-            if(floorCount%2==0)
+            if(floorCount%choiceEveryFloor==0)
             {
                 //choice between recover and risk
-                
+                buttonLoader.ShowButtons();
+                return;
             }
 
             NextFloor();
@@ -38,7 +42,7 @@ public class FloorCore:MonoBehaviour
     }
     public void FirstFloor()
     {
-
+        gold.ClearGold();
         health.MakeMaxHealth();
         grid.GridLoad();
         gameObject.GetComponent<TurnCore>().enabled = true;
@@ -64,7 +68,7 @@ public class FloorCore:MonoBehaviour
 
 
     [SerializeField] UIPanel transitionPanel;
-
+    [SerializeField] UIPanel debtText;
     IEnumerator DoNextFloor()
     {
         game.GameStopped = true;
@@ -72,6 +76,10 @@ public class FloorCore:MonoBehaviour
         transitionPanel.FadeIn();
         yield return new WaitForSeconds(transitionPanel.FadeDuration);
         grid.NewGrid();
+        debtText.GetComponent<TextMeshProUGUI>().text = $"debt:{gold.Debt}";
+        debtText.FadeIn();
+        yield return new WaitForSeconds(debtText.FadeDuration);
+        debtText.FadeOut();
         transitionPanel.FadeOut();
         yield return new WaitForSeconds(transitionPanel.FadeDuration);
 

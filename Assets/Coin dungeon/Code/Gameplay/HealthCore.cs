@@ -6,6 +6,7 @@ public class HealthCore:MonoBehaviour
     [SerializeField] float health;
     [SerializeField] GameCore game;
     [SerializeField] TextMeshProUGUI healthText;
+    [SerializeField][Range(1, 10)] int maxHealth;
     public float Health
     {
         get { return health; }
@@ -26,7 +27,7 @@ public class HealthCore:MonoBehaviour
 
     public void MakeMaxHealth()
     {
-        Health = 3;
+        Health = (float)maxHealth;
     }
     public void Death()
     {

@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class CoinFlipping:MonoBehaviour
@@ -14,8 +15,19 @@ public class CoinFlipping:MonoBehaviour
     bool coinSelected = false;
     [SerializeField] CoinAnimation coinAnimation;
     [SerializeField] CoinLoader coinLoader;
+
+    [SerializeField] UIPanel headOrTailText;
+    [SerializeField] GameObject headOrTailGo;
+
+    [SerializeField] UIPanel earnedGoldText;
+    [SerializeField] GameObject earnedGoldGo;
     public IEnumerator Flip(Vector2Int target)
     {
+
+        headOrTailGo.SetActive(true);
+        headOrTailGo.transform.position = selectedCoin.transform.position;
+        headOrTailText.GetComponent<CanvasGroup>().alpha = 1;
+        headOrTailText.FadeOut();
 
         coinAnimation.DoFlipAnim();
         if (selectedCoin.DoRoll())
@@ -24,13 +36,14 @@ public class CoinFlipping:MonoBehaviour
             selectedCoin.spriteRenderer.sprite = selectedCoin.coinSpriteHead;
         }
         else
-        {
+        { 
             selectedCoin.spriteRenderer.sprite = selectedCoin.coinSpriteTail;
             Loose();
         }
 
+  
         yield return new WaitForSeconds(coinAnimation.FlipDuration);
-
+        headOrTailGo.SetActive(false);
         coinLoader.HideCoins();
     }
     public IEnumerator SelectingCoin()
@@ -61,13 +74,28 @@ public class CoinFlipping:MonoBehaviour
 
     void Win(Vector2Int target)
     {
+        var text = headOrTailText.GetComponent<TextMeshProUGUI>();
+        text.text = "head!";
+
+        text = earnedGoldText.GetComponent<TextMeshProUGUI>();
+        var canvasGroup = text.GetComponent<CanvasGroup>();
+        earnedGoldGo.transform.localPosition = grid.Position(target);
+
+        canvasGroup.alpha = 1;
+        float gold = 1*selectedCoin.GoldX;
+
+
+        text.text = $"1*{selectedCoin.GoldX}={gold.ToString("0.####")}";
+        earnedGoldText.FadeOut();
+
         grid.RemoveSpawnPoint(target);
         goldCore.Gold += 1*selectedCoin.GoldX;
-        //show text
     }
 
     void Loose()
     {
+        var text = headOrTailText.GetComponent<TextMeshProUGUI>();
+        text.text = "tail!";
         health.Health--;
     }
 }

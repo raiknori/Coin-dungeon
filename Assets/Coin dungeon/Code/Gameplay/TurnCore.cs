@@ -45,19 +45,19 @@ public class TurnCore:MonoBehaviour
     {
         if(!movementCore.IsMoving && !coolDown && !game.GameStopped)
         {
-            if(Input.GetKeyDown(KeyCode.UpArrow))
+            if(Input.GetKey(KeyCode.UpArrow))
             {
                 StartTurn(DirectionMove.up);
             }
-            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            else if (Input.GetKey(KeyCode.DownArrow))
             {
                 StartTurn(DirectionMove.down);
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            else if (Input.GetKey(KeyCode.LeftArrow))
             {
                 StartTurn(DirectionMove.left);
             }
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.RightArrow))
             {
                 StartTurn(DirectionMove.right);
             }
