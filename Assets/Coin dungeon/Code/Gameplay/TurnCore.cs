@@ -27,10 +27,11 @@ public class TurnCore:MonoBehaviour
 
         while(TurnCore.Tutorial)
         {
-            if( Input.GetKeyDown(KeyCode.UpArrow)    ||  
-                Input.GetKeyDown(KeyCode.DownArrow) || 
-                Input.GetKeyDown(KeyCode.LeftArrow) ||  
-                Input.GetKeyDown(KeyCode.RightArrow ))
+            float h = Input.GetAxisRaw("Horizontal");
+            float v = Input.GetAxisRaw("Vertical");
+
+
+            if ( h > 0 || v > 0)
             {
                 break;
             }
@@ -45,19 +46,19 @@ public class TurnCore:MonoBehaviour
     {
         if(!movementCore.IsMoving && !coolDown && !game.GameStopped)
         {
-            if(Input.GetKey(KeyCode.UpArrow))
+            if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
                 StartTurn(DirectionMove.up);
             }
-            else if (Input.GetKey(KeyCode.DownArrow))
+            else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             {
                 StartTurn(DirectionMove.down);
             }
-            else if (Input.GetKey(KeyCode.LeftArrow))
+            else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 StartTurn(DirectionMove.left);
             }
-            else if (Input.GetKey(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             {
                 StartTurn(DirectionMove.right);
             }

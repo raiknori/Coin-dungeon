@@ -9,7 +9,7 @@ public class StoryCore:MonoBehaviour
     [SerializeField] TextMeshProUGUI textTMP;
     [SerializeField] UIPanel textPanel;
     [SerializeField] string[] storyLines;
-
+    [SerializeField] AudioManager audioManager;
 
     private void Start()
     {
@@ -45,8 +45,9 @@ public class StoryCore:MonoBehaviour
 
         while (true)
         {
-            if(Input.GetKeyDown(KeyCode.RightArrow))
+            if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
+                audioManager.PlaySound("click");
                 break;
             }
 

@@ -25,7 +25,8 @@ public class CoinFlipping:MonoBehaviour
     [SerializeField] AudioManager audioManager;
     public IEnumerator Flip(Vector2Int target)
     {
-
+        yield return new WaitForSeconds(audioManager.SoundDuration("coinChoose")*0.3f);
+        audioManager.PlaySound("coinDrop");
         headOrTailGo.SetActive(true);
         headOrTailGo.transform.position = selectedCoin.transform.position;
         headOrTailText.GetComponent<CanvasGroup>().alpha = 1;
@@ -34,8 +35,8 @@ public class CoinFlipping:MonoBehaviour
         coinAnimation.DoFlipAnim();
         if (selectedCoin.DoRoll())
         {
-            Win(target);
             selectedCoin.spriteRenderer.sprite = selectedCoin.coinSpriteHead;
+            Win(target);
         }
         else
         { 
@@ -43,7 +44,6 @@ public class CoinFlipping:MonoBehaviour
             Loose();
         }
 
-  
         yield return new WaitForSeconds(coinAnimation.FlipDuration);
         headOrTailGo.SetActive(false);
         coinLoader.HideCoins();
@@ -70,7 +70,7 @@ public class CoinFlipping:MonoBehaviour
 
     public void SelectCoin(Coin coin) //Listener to coin button ui
     {
-        audioManager.PlaySound("click");
+        audioManager.PlaySound("coinChoose");
         coinSelected = true;
         selectedCoin = coin;
     }
@@ -86,7 +86,6 @@ public class CoinFlipping:MonoBehaviour
 
         canvasGroup.alpha = 1;
         float gold = 1*selectedCoin.GoldX;
-
 
         text.text = $"1*{selectedCoin.GoldX}={gold.ToString("0.####")}";
         earnedGoldText.FadeOut();

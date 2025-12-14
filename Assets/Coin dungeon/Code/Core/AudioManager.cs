@@ -36,6 +36,19 @@ public class AudioManager:MonoBehaviour
         }
     }
 
+    public float SoundDuration(string audioName)
+    {
+        var audioClip = GetAudioClip(audioName);
+
+
+        if (audioClip != null)
+        {
+            return audioClip.audioClip.length;
+
+        }
+
+        return 0f;
+    }
     public void PlayMusic(string audioName, bool looped)
     {
         var audioClip = GetAudioClip(audioName);

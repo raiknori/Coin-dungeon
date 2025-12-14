@@ -83,6 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game: {fileID: 3094119645385083075}
   transitionPanel: {fileID: 0}
+  audioManager: {fileID: 1430866069963066768}
   restartText: {fileID: 0}
 --- !u!114 &672604417590966686
 MonoBehaviour:
@@ -157,6 +158,7 @@ MonoBehaviour:
   - you are in debt...
   - you owe 20 gold...
   - to pay it, you entered the coin dungeon...
+  audioManager: {fileID: 0}
   waitForInputText: {fileID: 0}
 --- !u!114 &6608842985529655940
 MonoBehaviour:
@@ -173,6 +175,7 @@ MonoBehaviour:
   grid: {fileID: 0}
   player: {fileID: 0}
   attackCore: {fileID: 6379401143029225942}
+  audioManager: {fileID: 1430866069963066768}
   moveDuration: 0.29
 --- !u!114 &6379401143029225942
 MonoBehaviour:
@@ -210,6 +213,7 @@ MonoBehaviour:
   headOrTailGo: {fileID: 0}
   earnedGoldText: {fileID: 0}
   earnedGoldGo: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!114 &8295640246383768971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +327,7 @@ MonoBehaviour:
   - but your debt stays...
   - the coin dungeon awaits...
   gold: {fileID: 6867828853609331775}
+  audioManager: {fileID: 1430866069963066768}
   waitForInputText: {fileID: 0}
 --- !u!114 &1430866069963066768
 MonoBehaviour:

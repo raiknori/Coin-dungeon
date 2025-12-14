@@ -10,6 +10,9 @@ public class Ending:MonoBehaviour
     [SerializeField] string[] looseDebtLines;
     [SerializeField] string[] looseDeathLines;
     [SerializeField] GoldCore gold;
+    [SerializeField] AudioManager audioManager;
+
+    [SerializeField] Restart restart;
 
     string[] debtLines = 
     {
@@ -68,6 +71,7 @@ public class Ending:MonoBehaviour
 
         textPanel.FadeOut();
         yield return new WaitForSeconds(textPanel.FadeDuration / 3);
+
     }
 
     IEnumerator DoEnding(string[] lines)
@@ -85,6 +89,8 @@ public class Ending:MonoBehaviour
         }
 
         textPanel.gameObject.SetActive(false);
+
+        restart.WaitForRestart();
     }
 
     [SerializeField] GameObject waitForInputText;
@@ -94,8 +100,10 @@ public class Ending:MonoBehaviour
 
         while (true)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
+
+                audioManager.PlaySound("click");
                 break;
             }
 

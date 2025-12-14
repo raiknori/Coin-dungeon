@@ -39,7 +39,6 @@ public class GameCore:MonoBehaviour
         healthText.SetActive(false);
         goldText.SetActive(false);
         goldXText.SetActive(false);
-        restart.WaitForRestart();
         ending.StartWinEnding();
 
     }
@@ -52,7 +51,6 @@ public class GameCore:MonoBehaviour
         healthText.SetActive(false);
         goldText.SetActive(false);
         goldXText.SetActive(false);
-        restart.WaitForRestart();
         ending.StartDeathEnding();
     }
 
@@ -63,7 +61,6 @@ public class GameCore:MonoBehaviour
         healthText.SetActive(false);
         goldText.SetActive(false);
         goldXText.SetActive(false);
-        restart.WaitForRestart();
         ending.StartDebtEnding();
     }
 

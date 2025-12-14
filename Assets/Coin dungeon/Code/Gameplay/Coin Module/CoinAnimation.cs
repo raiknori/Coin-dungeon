@@ -42,7 +42,9 @@ public class CoinAnimation:MonoBehaviour
         coin1Coin.spriteRenderer.sprite = coin1Coin.coinSpriteDeffault;
         coin2Coin.spriteRenderer.sprite = coin2Coin.coinSpriteDeffault;
 
-        coin1.transform.DOShakePosition(flipDuration);
+        
+
+        coin1.transform.DOShakePosition(flipDuration,1,15,80);
         coin2.transform.DOShakePosition(flipDuration);
 
     }

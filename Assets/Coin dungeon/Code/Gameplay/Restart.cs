@@ -5,6 +5,7 @@ public class Restart:MonoBehaviour
 {
     [SerializeField] GameCore game;
     [SerializeField] UIPanel transitionPanel;
+    [SerializeField] AudioManager audioManager;
     public void WaitForRestart()
     {
         StartCoroutine(Restarting());
@@ -21,6 +22,8 @@ public class Restart:MonoBehaviour
         {
             if (Input.GetKeyUp(KeyCode.Space))
             {
+
+                audioManager.PlaySound("click");
                 break;
             }
 
