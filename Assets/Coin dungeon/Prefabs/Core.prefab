@@ -138,7 +138,7 @@ MonoBehaviour:
   health: 6
   game: {fileID: 3094119645385083075}
   healthText: {fileID: 0}
-  maxHealth: 0
+  maxHealth: 6
 --- !u!114 &8462750089694011083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +158,7 @@ MonoBehaviour:
   - you are in debt...
   - you owe 20 gold...
   - to pay it, you entered the coin dungeon...
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1430866069963066768}
   waitForInputText: {fileID: 0}
 --- !u!114 &6608842985529655940
 MonoBehaviour:
@@ -176,7 +176,7 @@ MonoBehaviour:
   player: {fileID: 0}
   attackCore: {fileID: 6379401143029225942}
   audioManager: {fileID: 1430866069963066768}
-  moveDuration: 0.29
+  moveDuration: 0.25
 --- !u!114 &6379401143029225942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
   headOrTailGo: {fileID: 0}
   earnedGoldText: {fileID: 0}
   earnedGoldGo: {fileID: 0}
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1430866069963066768}
 --- !u!114 &8295640246383768971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
   movementCore: {fileID: 6608842985529655940}
   game: {fileID: 3094119645385083075}
   tutorialText: {fileID: 0}
-  cooldDown: 0.3
+  cooldDown: 0.15
 --- !u!114 &5050954858603619019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flipDuration: 0.5
-  moveDuration: 1
+  moveDuration: 0.5
   coin1: {fileID: 0}
   coin2: {fileID: 0}
   coin1Coin: {fileID: 0}
@@ -299,7 +299,7 @@ MonoBehaviour:
   button2: {fileID: 0}
   buttonShowTransform: {fileID: 0}
   buttonHideTransform: {fileID: 0}
-  moveDuration: 2
+  moveDuration: 1.5
 --- !u!114 &1201586455426153380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +328,7 @@ MonoBehaviour:
   - the coin dungeon awaits...
   gold: {fileID: 6867828853609331775}
   audioManager: {fileID: 1430866069963066768}
+  restart: {fileID: 8636230199767246938}
   waitForInputText: {fileID: 0}
 --- !u!114 &1430866069963066768
 MonoBehaviour:
@@ -362,7 +363,7 @@ AudioSource:
   m_GameObject: {fileID: 3281302769140452700}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 7a4767135f88e824abd7add7dc60a828, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0

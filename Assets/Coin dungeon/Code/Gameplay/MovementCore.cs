@@ -86,8 +86,7 @@ public class MovementCore:MonoBehaviour
         }
 
         yield return StartCoroutine(attackCore.Attack(target));
-        audioManager.PlaySound("deny");
-        ImpactCore.Shake();
+        //deny play
 
 
         elapsed = 0;

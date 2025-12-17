@@ -91,6 +91,8 @@ public class CoinFlipping:MonoBehaviour
         earnedGoldText.FadeOut();
 
         grid.RemoveSpawnPoint(target);
+        audioManager.PlaySound("hitWin");
+        ImpactCore.Shake();
         goldCore.Gold += 1*selectedCoin.GoldX*goldCore.GoldX;
     }
 
@@ -99,5 +101,7 @@ public class CoinFlipping:MonoBehaviour
         var text = headOrTailText.GetComponent<TextMeshProUGUI>();
         text.text = "tail!";
         health.Health--;
+        ImpactCore.Shake();
+        audioManager.PlaySound("deny");
     }
 }

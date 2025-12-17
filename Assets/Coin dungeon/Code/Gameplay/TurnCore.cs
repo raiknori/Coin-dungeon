@@ -31,7 +31,7 @@ public class TurnCore:MonoBehaviour
             float v = Input.GetAxisRaw("Vertical");
 
 
-            if ( h > 0 || v > 0)
+            if ( h != 0 || v != 0)
             {
                 break;
             }
