@@ -1,10 +1,11 @@
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 public class HealthCore:MonoBehaviour
 {
     [SerializeField] float health;
-    [SerializeField] GameCore game;
+    [Inject] GameCore game;
     [SerializeField] TextMeshProUGUI healthText;
     [SerializeField][Range(1, 10)] int maxHealth;
     public float Health

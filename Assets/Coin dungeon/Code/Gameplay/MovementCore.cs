@@ -1,15 +1,16 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Zenject;
 using static UnityEngine.GraphicsBuffer;
 
 public class MovementCore:MonoBehaviour
 {
-    [SerializeField] Grid grid;
+    [Inject] Grid grid;
 
     public GameObject player;
-    [SerializeField] AttackCore attackCore;
-    [SerializeField] AudioManager audioManager;
+    [Inject] AttackCore attackCore;
+    [Inject] AudioManager audioManager;
 
     Coroutine moveCoroutine;
     public void DeffaultMove()

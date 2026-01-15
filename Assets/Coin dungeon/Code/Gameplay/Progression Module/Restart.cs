@@ -1,11 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using Zenject;
 
 public class Restart:MonoBehaviour
 {
-    [SerializeField] GameCore game;
+    [Inject] GameCore game;
     [SerializeField] UIPanel transitionPanel;
-    [SerializeField] AudioManager audioManager;
+    [Inject] AudioManager audioManager;
     public void WaitForRestart()
     {
         StartCoroutine(Restarting());

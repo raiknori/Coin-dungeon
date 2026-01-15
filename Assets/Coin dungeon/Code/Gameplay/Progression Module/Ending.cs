@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using Zenject;
 public class Ending:MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI textTMP;
@@ -8,10 +9,10 @@ public class Ending:MonoBehaviour
     [SerializeField] string[] winLines;
     [SerializeField] string[] looseDebtLines;
     [SerializeField] string[] looseDeathLines;
-    [SerializeField] GoldCore gold;
-    [SerializeField] AudioManager audioManager;
+    [Inject] GoldCore gold;
+    [Inject] AudioManager audioManager;
 
-    [SerializeField] Restart restart;
+    [Inject] Restart restart;
 
     string[] debtLines = 
     {

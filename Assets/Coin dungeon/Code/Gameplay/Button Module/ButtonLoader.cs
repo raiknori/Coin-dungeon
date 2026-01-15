@@ -1,8 +1,9 @@
 using UnityEngine;
+using Zenject;
 
 public class ButtonLoader:MonoBehaviour
 {
-    [SerializeField] ButtonAnimation buttonAnimation;
+    [Inject] ButtonAnimation buttonAnimation;
     public void ShowButtons()
     {
         buttonAnimation.DoShowAnim();

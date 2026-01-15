@@ -1,17 +1,18 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using Zenject;
 
 public class GameCore:MonoBehaviour
 {
     bool gameStopped = true;
-    [SerializeField] Grid grid;
-    [SerializeField] FloorCore floors;
+    [Inject] Grid grid;
+    [Inject] FloorCore floors;
     [SerializeField] UIPanel transitionPanel;
     [SerializeField] GameObject healthText;
     [SerializeField] GameObject goldText;
     [SerializeField] GameObject goldXText;
-    [SerializeField] Restart restart;
-    [SerializeField] Ending ending;
+    [Inject] Restart restart;
+    [Inject] Ending ending;
     public bool GameStopped
     {
         get { return gameStopped; } 

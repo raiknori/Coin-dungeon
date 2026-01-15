@@ -1,19 +1,20 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 public class FloorCore:MonoBehaviour
 {
-    [SerializeField] Grid grid;
-    [SerializeField] HealthCore health;
+    [Inject] Grid grid;
+    [Inject] HealthCore health;
     [SerializeField][Range(3,10)] int finalFloor;
-    [SerializeField] GoldCore gold;
-    [SerializeField] GameCore game;
+    [Inject] GoldCore gold;
+    [Inject] GameCore game;
     private int floorCount = 1;
 
 
     [SerializeField][Range(1, 10)] int choiceEveryFloor;
-    [SerializeField] ButtonLoader buttonLoader;
+    [Inject] ButtonLoader buttonLoader;
     public int FloorCount
     {
         get
@@ -46,13 +47,14 @@ public class FloorCore:MonoBehaviour
         floorCount = 1;
     }
 
+    [SerializeField] GameObject turnCore;
     public void FirstFloor()
     {
         gold.ClearGold();
         health.MakeMaxHealth();
         grid.GridLoad();
-        gameObject.GetComponent<TurnCore>().enabled = true;
-        
+
+        turnCore.GetComponent<TurnCore>().enabled = true;
     }
 
     public void NextFloor()

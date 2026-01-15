@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using Zenject;
 
 public class CoinLoader:MonoBehaviour
 {
     [SerializeField] Coin coin1;
     [SerializeField] Coin coin2;
     [SerializeField] CoinData[] coinsData;
-    [SerializeField] CoinAnimation coinAnimation;
+    [Inject] CoinAnimation coinAnimation;
 
     void GetCoins()
     {

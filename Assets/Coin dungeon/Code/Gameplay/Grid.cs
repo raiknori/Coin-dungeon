@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using Zenject;
 using static UnityEngine.GraphicsBuffer;
 
 public class Grid : MonoBehaviour
@@ -15,7 +16,7 @@ public class Grid : MonoBehaviour
 
     Vector2Int playerPos = new Vector2Int();
 
-    [SerializeField] MovementCore movementCore;
+    [Inject] MovementCore movementCore;
 
 
     public Vector2Int PlayerPos
@@ -126,7 +127,7 @@ public class Grid : MonoBehaviour
     [SerializeField][Range(1, 5)] int enemyMaxAmount;
     List<Vector2Int> spawnPoints = new List<Vector2Int>();
     List<GameObject> spawnPointsGO = new List<GameObject>();
-    [SerializeField] FloorCore floorCore;
+    [Inject] FloorCore floorCore;
 
     public void RemoveSpawnPoint(Vector2Int target)
     {

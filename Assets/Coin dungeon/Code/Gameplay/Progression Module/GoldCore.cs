@@ -2,6 +2,7 @@ using DG.Tweening;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using Zenject;
 
 public class GoldCore:MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class GoldCore:MonoBehaviour
 
     [SerializeField] [Range(0.1f,10f)] float goldX;
     [SerializeField] [Range(20,32)] float debt;
-    [SerializeField] GameCore game;
+    [Inject] GameCore game;
 
     [SerializeField] TextMeshProUGUI goldText;
     [SerializeField] TextMeshProUGUI goldXText;

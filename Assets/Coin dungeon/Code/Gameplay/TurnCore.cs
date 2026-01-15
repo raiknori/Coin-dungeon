@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Zenject;
 
 enum DirectionMove
 {
@@ -8,9 +9,9 @@ enum DirectionMove
 
 public class TurnCore:MonoBehaviour
 {
-    [SerializeField] Grid grid;
-    [SerializeField] MovementCore movementCore;
-    [SerializeField] GameCore game;
+    [Inject] Grid grid;
+    [Inject] MovementCore movementCore;
+    [Inject] GameCore game;
     [SerializeField] GameObject tutorialText; 
 
     bool coolDown = false;

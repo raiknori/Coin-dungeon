@@ -2,14 +2,15 @@ using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using Zenject;
 
 public class StoryCore:MonoBehaviour
 {
-    [SerializeField] GameCore game;
+    [Inject] GameCore game;
     [SerializeField] TextMeshProUGUI textTMP;
     [SerializeField] UIPanel textPanel;
     [SerializeField] string[] storyLines;
-    [SerializeField] AudioManager audioManager;
+    [Inject] AudioManager audioManager;
 
     private void Start()
     {
