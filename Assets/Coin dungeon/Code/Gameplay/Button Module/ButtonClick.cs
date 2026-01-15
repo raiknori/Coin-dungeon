@@ -1,14 +1,15 @@
 using System.Drawing;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Zenject;
 
 public class ButtonClick : MonoBehaviour, IPointerClickHandler
 {
 
-    [SerializeField] FloorCore floor;
-    [SerializeField] ButtonLoader buttonLoader;
+    [Inject] FloorCore floor;
+    [Inject] ButtonLoader buttonLoader;
     [SerializeField] bool recoverButton;
-    [SerializeField] AudioManager audioManager;
+    [Inject] AudioManager audioManager;
     public void OnPointerClick(PointerEventData eventData)
     {
 

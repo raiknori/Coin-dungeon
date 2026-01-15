@@ -3,6 +3,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Zenject;
 
 public class Coin : MonoBehaviour, IPointerClickHandler
 {
@@ -17,7 +18,7 @@ public class Coin : MonoBehaviour, IPointerClickHandler
     public Sprite coinSpriteHead;
     public Sprite coinSpriteTail;
     public Sprite coinSpriteDeffault;
-    [SerializeField] CoinFlipping coinFlipping;
+    [Inject] CoinFlipping coinFlipping;
     string description;
     string name;
     bool ineractable =true;

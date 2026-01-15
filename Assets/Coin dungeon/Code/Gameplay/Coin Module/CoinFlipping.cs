@@ -1,20 +1,21 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 public class CoinFlipping:MonoBehaviour
 {
 
-    [SerializeField] AttackCore attackCore;
-    [SerializeField] Grid grid;
-    [SerializeField] GoldCore goldCore;
-    [SerializeField] HealthCore health;
+    [Inject] AttackCore attackCore;
+    [Inject] Grid grid;
+    [Inject] GoldCore goldCore;
+    [Inject] HealthCore health;
     [SerializeField] GameObject selectCoinText;
 
     Coin selectedCoin;
     bool coinSelected = false;
-    [SerializeField] CoinAnimation coinAnimation;
-    [SerializeField] CoinLoader coinLoader;
+    [Inject] CoinAnimation coinAnimation;
+    [Inject] CoinLoader coinLoader;
 
     [SerializeField] UIPanel headOrTailText;
     [SerializeField] GameObject headOrTailGo;
@@ -22,7 +23,7 @@ public class CoinFlipping:MonoBehaviour
     [SerializeField] UIPanel earnedGoldText;
     [SerializeField] GameObject earnedGoldGo;
 
-    [SerializeField] AudioManager audioManager;
+    [Inject] AudioManager audioManager;
     public IEnumerator Flip(Vector2Int target)
     {
         yield return new WaitForSeconds(audioManager.SoundDuration("coinChoose")*0.3f);

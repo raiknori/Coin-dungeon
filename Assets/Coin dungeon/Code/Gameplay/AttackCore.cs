@@ -1,9 +1,10 @@
 using System.Collections;
 using UnityEngine;
+using Zenject;
 
 public class AttackCore:MonoBehaviour
 {
-    [SerializeField] CoinFlipping coinFlipping;
+    [Inject] CoinFlipping coinFlipping;
 
     public IEnumerator Attack(Vector2Int target)
     {
